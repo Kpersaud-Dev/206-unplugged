@@ -110,12 +110,16 @@ textarea {
 
    /* Header Styles */
 
+   header {
+     padding: 15px 0;
+   }
 
    header .content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      margin: 0;
    }
 
 
@@ -124,11 +128,13 @@ textarea {
       justify-content: space-around;
       align-items: center;
       flex-flow: row wrap;
+      width: 60%;
    }
 
    header nav ul {
      display: flex;
      justify-content: space-around;
+     width: 100%;
    }
 
    /* -------------- Mobile Styles - Homepage ----------- */
@@ -138,6 +144,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     margin: 0 20px;
    }
 
    aside {
@@ -145,6 +152,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     margin: 0 20px;
    }
 
    .form-description {
@@ -162,6 +170,8 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      padding: 40px 0;
+      margin: 0 20px;
    }
 
    .features .features-items {
@@ -169,6 +179,14 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+   }
+
+   .features article {
+     width: 57%;
+   }
+
+   .features p {
+     margin: 0;
    }
 
 
@@ -179,10 +197,24 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     padding: 45px 0;
+     margin: 0 20px;
    }
 
+   .reviews content-wrapper {
+     width: 89%;
+   }
+
+   .reviews h3 {
+     width: 49%;
+   }
    /* Footer */
 
+
+   footer .content-wrapper {
+     width: 55%;
+     margin: 50px 0;
+   }
 
    footer .social-icons {
      display: flex;
@@ -194,6 +226,10 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+   }
+
+   footer p {
+     margin: 0;
    }
 
    /* ------------ About ------------ */
