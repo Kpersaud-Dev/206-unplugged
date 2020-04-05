@@ -361,6 +361,7 @@ input[type=button] {
    footer {
      flex-direction: column;
      background-color: #202322;
+     text-align: center;
    }
 
    footer .contact {
@@ -382,7 +383,17 @@ input[type=button] {
      display: flex;
      justify-content: center;
      align-items: center;
+     background-color: #527158;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
    }
+
+   footer .social-icons pi {
+     font-size: 1.3125em;
+   }
+
+
 
    footer p {
      margin: 0;
