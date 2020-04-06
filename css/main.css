@@ -102,7 +102,6 @@ textarea {
 
    html {
      font-size: 16px;
-
    }
 
    body {
@@ -115,8 +114,9 @@ textarea {
    ul,
    ol {
      text-decoration: none;
-     list-style: none;
-
+     list-style-type: none;
+     margin:0;
+     padding: 0;
    }
 
    a {
@@ -127,22 +127,22 @@ textarea {
 
    h2 {
      font-family: 'Open Sans', sans-serif;
-     font-size: 2.5em;
-     line-height: 50px;
      font-weight: 500;
+     font-size: 1.875em;
+     margin: 0;
 
    }
 
    h3,
    h4 {
      font-family: 'Open Sans', sans-serif;
-     font-size: 1.75em;
-     margin: 20px 0;
      font-weight: 500;
+     font-size: 1.125em;
+     margin: 20px 0;
    }
 
    p {
-     font-size: 1em;
+     font-size: .875em;
      line-height: 1.285;
 
    }
@@ -165,31 +165,7 @@ textarea {
    }
 
 
-aside .form {
-  margin-top: 30px;
-}
 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 
    /* -------------- Base Header - Footer Styles ----------- */
@@ -209,13 +185,16 @@ input[type=button] {
      background-color: #202322;
    }
 
+   header h2 {
+     font-size: 3.75em;
+   }
+
    header .content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
       margin: 0;
-
    }
 
 
@@ -228,6 +207,7 @@ input[type=button] {
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
+
    }
 
    header nav ul {
@@ -238,7 +218,8 @@ input[type=button] {
    }
 
    header nav ul li {
-
+     font-size: 1.125em;
+     padding: 0 20px;
    }
 
    header figure {
@@ -271,8 +252,11 @@ input[type=button] {
      min-height: 500px;
    }
 
-   .hero-area h2 {
-     padding-left: 20px;
+   .hero-area h1 {
+     font-size: 2.25em;
+     font-weight: 500;
+     line-height: 1.2;
+     padding-left: 25px;
    }
 
    /* Aside */
@@ -283,20 +267,38 @@ input[type=button] {
      align-items: center;
      flex-flow: row wrap;
      background-color: #527158;
-     margin:0;
-     min-height: 330px;
    }
 
    aside h2{
      font-size: 1.125em;
+     font-weight: bold;
+     margin-top: 5px;
    }
 
-   .form-description {
-
+   aside .form {
+     margin-top: 30px;
    }
 
-   .form {
+   input[type=text] {
+     box-sizing: border-box;
+     width: 100%;
+     color: #2a423a;
+     font-style: italic;
+     padding: 1em;
+   }
 
+   input[type=button] {
+     width: 100%;
+     padding: 20px 0;
+     margin-top: 20px;
+     background-color: #2a423a;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 1.125em;
+     color: #e2e3ed;
+     border: none;
+     text-align: center;
+     text-transform: uppercase;
    }
 
    /* Features */
@@ -320,7 +322,7 @@ input[type=button] {
    }
 
    .features h2 {
-     margin-bottom: 60px;
+     margin-bottom: 20px;
    }
 
    .features article {
@@ -341,14 +343,15 @@ input[type=button] {
    /* Reviews */
 
    .reviews {
+     background-color: #2a423a;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-     background-color: #2a423a;
    }
 
    .reviews h2 {
      margin-bottom: 40px;
+     line-height: 1;
    }
 
    .reviews h3 {
@@ -359,13 +362,13 @@ input[type=button] {
    /* Footer */
 
    footer {
+     text-align: center;
      flex-direction: column;
      background-color: #202322;
-     text-align: center;
    }
 
    footer .contact {
-     margin: 50px;
+     margin-bottom: 50px;
    }
 
    footer .content-wrapper {
@@ -393,11 +396,8 @@ input[type=button] {
      font-size: 1.3125em;
    }
 
-
-
    footer p {
      margin: 0;
-     text-align: center;
    }
 
    footer .copyright {
@@ -565,6 +565,16 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
   header {
     justify-content: space-around;
     padding: 33px 0;
@@ -576,7 +586,6 @@ input[type=button] {
 
   header nav ul {
     justify-content: space-between;
-    list-style: none;
   }
 
   header .content-wrapper {
@@ -590,13 +599,21 @@ input[type=button] {
 
   header figure {
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
   /***** Hero Area *****/
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+    padding-top: 80px;
+    width: 70%;
+  }
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -617,7 +634,7 @@ input[type=button] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
   }
 
@@ -630,11 +647,20 @@ input[type=button] {
   .reviews article {
     display: flex;
     justify-content: space-between;
-
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article .team-review {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /***** Footer *****/
@@ -711,17 +737,24 @@ input[type=button] {
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
     .content-wrapper {
       max-width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
   /* Hero */
 
     .hero-area h1 {
       width: 60%;
+      font-size: 3.75em;
+      line-height: 75px;
+      padding-top: 50px;
     }
 
   /* Aside */
@@ -738,18 +771,35 @@ input[type=button] {
   /* Features */
 
     .features h2 {
-        width: 90%;
+      width: 90%;
     }
 
     .features article {
-        flex-basis: 33%;
+      flex-basis: 33%;
     }
 
   /* Reviews */
 
-  .reviews article div {
+  .reviews .content-wrapper {
+      width: 90%;
+  }
+
+  .reviews article {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      width: 90%;
+
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article .team-review {
       width: 42%;
   }
+
 
 /* =============================================================================
    About Page
